@@ -20,7 +20,7 @@ const Home = () => {
                                     Feel free to contact me. <br />
                                 </p> 
 
-                                <Button variant="dark">Contact Me</Button>
+                                <Button variant="light">Contact Me</Button>
 
                             </div>
                                 

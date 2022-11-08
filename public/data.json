@@ -1,0 +1,57 @@
+[
+    {
+        "key": 1,
+        "image": "https://i.postimg.cc/3ND2GQ70/Cardiorespiratory-Endurance.jpg",
+        "title": "Cardio respiratory Endurance",
+        "details": "Cardio respiratory fitness is the ability of your cardio vascular system to supply oxygenated blood to your body's working muscles. Activities such as walking, jogging, or running at a comfortable pace can help improve your cardio respiratory endurance. Cardio workouts also improve pulmonary function and strengthen the heart muscles which increases blood circulation throughout the entire body",
+        "duration":"3 month",
+        "price": 10
+
+    },
+     
+    {
+    "key": 2,
+    "image": "https://i.postimg.cc/rwqq0GNq/Flexiblity.jpg",
+    "title":"Flexiblity",
+    "description": "Flexibility helps improve muscle strength while increasing the range of motion and helping to prevent injury. Flexibility training involves stretching and movement. It is good for your heart rate,as well as stimulating muscles, tendons, and ligaments. Increasing flexibility fitness can help prevent injuries such as muscle cramps or tears.",
+    "duration":"3 month",
+    "price": 10
+    },
+    
+    {
+    "key": 3,
+    "image": "https://i.postimg.cc/MpYVVDk5/Balance.jpg",
+    "title":"Balance",
+    "description":"Balance fitness refers to fitness training that focuses on the body's core. This type of fitness is good for your bones, muscles, heart rate, breathing patterns, energy levels, flexibility, and circulation. It requires no equipment - these exercises are conducted on a flat surface,which can be any level surface such as the floor or garden ground. These exercises provide resistance against gravity and therefore have the effect of strength and flexibility to build a strong core.",
+    "duration":"3 month",
+    "price": 10
+},
+    
+    {
+    "key": 4,
+    "image": "https://i.postimg.cc/3x6Hbr1y/Strength.jpg",
+    "title": "Strength",
+    "description":"Strength fitness involves contracting body parts against an opposing force to build muscle mass and endurance. Strength fitness also helps strengthen bones, which decreases risk of fractures.This type of exercise requires you to lift heavy weights. This type of fitness helps build muscle mass and tone your body. Strength training provides mental clarity. when you train with weights at intense levels, also known as high resistance training, you release BDNF (Brain-Derived Neurotrophic Factor), which converts endurance muscles into strength muscles. ",
+    "duration":"3 month",
+    "price": 10
+},
+    
+    {
+    "key": 5,
+    "image": "https://i.postimg.cc/CLSj1tX5/Coordination.jpg",
+    "title":"Coordination",
+    "description":"Coordination fitness is beneficial to those who perform certain sports or activities that require a high level of coordination. It improves the body’s ability for optimal movement and also provides mental health benefits. This type of fitness training focuses on developing a person’s physical skills and abilities through movement. In other words, coordination fitness is moving your body in different ways without losing a specific pace or routine. It requires concentration and can help improve all other types of physical fitness.",
+    "duration":"3 month",
+    "price": 10
+},
+    
+    {
+    "key": 6,
+    "image": "https://i.postimg.cc/7ZCrTBT8/Agility.jpg",
+    "title": "Agility",
+    "description":"Agility fitness includes tasks and workouts that improve coordination, speed of thought, multi-tasking ability, and mental focus. The goal with agility fitness routines is to increase productivity in all facets of life through improved concentration. Personal trainers tend to work on their clients’ agility to help them achieve their fitness goals.",
+    "duration":"3 month",
+    "price": 10
+}
+    
+    ]
