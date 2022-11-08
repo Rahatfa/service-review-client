@@ -1,0 +1,17 @@
+.logo{
+    width: 100px;
+}
+.nab-main{
+    background-color: #000;
+    width: 100%;
+}
+.me-auto{
+    background-color: #000;
+    color: #000;
+    width: 50%;
+    font-size: x-large;
+    font-weight: 700;
+    margin: 50px auto;
+    justify-content: space-evenly;
+
+}
