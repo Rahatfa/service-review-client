@@ -1,0 +1,15 @@
+.signUp{
+    width: 400px;
+    /* height: 00px; */
+    background-color: rgb(182, 170, 170);
+    margin: 5%;
+    margin-left: 40%;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 15px 5px rgb(90, 87, 87);
+    
+}
+p{
+    font-weight:bold;
+    font-size: larger;
+}
