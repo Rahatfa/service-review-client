@@ -1,0 +1,12 @@
+.cards{
+    display: flex;
+    flex-wrap:wrap;
+    gap: 20px; 
+   
+}
+.btn-details{
+    margin-left: 100%;
+    margin-top: 50%;
+    width: 120px;
+    
+}

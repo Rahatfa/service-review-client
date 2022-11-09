@@ -1,9 +1,9 @@
 [
     {
         "key": 1,
-        "image": "https://i.postimg.cc/3ND2GQ70/Cardiorespiratory-Endurance.jpg",
+        "image": "https://i.postimg.cc/hGbzWWmV/Cardiorespiratory-Endurance.jpg",
         "title": "Cardio respiratory Endurance",
-        "details": "Cardio respiratory fitness is the ability of your cardio vascular system to supply oxygenated blood to your body's working muscles. Activities such as walking, jogging, or running at a comfortable pace can help improve your cardio respiratory endurance. Cardio workouts also improve pulmonary function and strengthen the heart muscles which increases blood circulation throughout the entire body",
+        "description": "Cardio respiratory fitness is the ability of your cardio vascular system to supply oxygenated blood to your body's working muscles. Activities such as walking, jogging, or running at a comfortable pace can help improve your cardio respiratory endurance. Cardio workouts also improve pulmonary function and strengthen the heart muscles which increases blood circulation throughout the entire body",
         "duration":"3 month",
         "price": 10
 

@@ -3,6 +3,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 import img from '../../assets/profile.jpg';
 import './Home.css'
 import Button from 'react-bootstrap/Button';
+import Classes from './classes/Classes';
 
 const Home = () => {
     return (
@@ -15,7 +16,7 @@ const Home = () => {
                         </div>
                         <div>
                             <div className='profile-p'>
-                                <p>It's Rahat. Personal trainer. 
+                                <p>It's <span>Rahat</span>. Personal trainer. 
                                     <br />
                                     Feel free to contact me. <br />
                                 </p> 
@@ -28,9 +29,7 @@ const Home = () => {
                     </div>
                 </Col>
                 <Col>
-                    <div>
-                        <h2>Home 2</h2>
-                    </div>
+                    <Classes></Classes>
                 </Col>
             </Row>
         </Container>
