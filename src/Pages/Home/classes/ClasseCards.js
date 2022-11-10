@@ -5,7 +5,7 @@ import Card from 'react-bootstrap/Card';
 import './ClasseCards.css'
 
 const ClasseCards = ({classe}) => {
-    const {image, title, description}=classe;
+    const {image, title, description}= classe;
     return (
         <div>
             <Card style={{ width: '18rem' }}>
