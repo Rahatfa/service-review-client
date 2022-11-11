@@ -3,6 +3,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Main from "../../Layout/Main";
 import Blog from "../../Pages/Blog/Blog";
 import Cards from "../../Pages/Home/classes/Cards";
+import ClassDetails from "../../Pages/Home/classes/ClassDetails";
 import Classes from "../../Pages/Home/classes/Classes";
 import Home from "../../Pages/Home/Home";
 import Login from "../../Pages/Login/Login";
@@ -10,7 +11,7 @@ import SignUp from "../../Pages/SignUp/SignUp";
 
 
 
-const router = createBrowserRouter([
+export const router = createBrowserRouter([
     {
         path:'/',
         element: <Main></Main>,
@@ -23,13 +24,19 @@ const router = createBrowserRouter([
                 path:'/home',
                 element: <Home></Home>
             },
-            {
-                path:'/classes',
-                element: <Classes></Classes>
-            },
+            // {
+            //     path:'/classes',
+            //     element: <Classes></Classes>
+            // },
             {
                 path:'/cards',
                 element: <Cards></Cards>
+            },
+            {
+                path:'/cardDetails/:id',
+                element: <ClassDetails></ClassDetails>,
+                loader: ({params}) => fetch(`http://localhost:5000/classes/${params.id}`)
+
             },
             {
                 path:'/login',
