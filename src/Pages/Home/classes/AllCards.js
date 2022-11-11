@@ -1,13 +1,13 @@
 import React from 'react';
-import { ButtonGroup } from 'react-bootstrap';
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import './ClasseCards.css'
+import Button from 'react-bootstrap/Button';
+import './AllCards.css'
 
-const ClasseCards = ({classe}) => {
-    const {image, title, description, price}= classe;
+const AllCards = ({card}) => {
+    
+    const {image, title, description, price}= card;
     return (
-        <div>
+        <div className='all-cards'>
             <Card style={{ width: '18rem' }}>
                 <Card.Img className='card-img' variant="top" src={image} />
                 <Card.Body>
@@ -26,4 +26,4 @@ const ClasseCards = ({classe}) => {
     );
 };
 
-export default ClasseCards;
+export default AllCards;

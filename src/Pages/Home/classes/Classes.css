@@ -1,12 +1,31 @@
-.cards{
+.classesCards {
+    /* width: 90%;
+    margin: auto; */
     display: flex;
-    flex-wrap:wrap;
-    gap: 20px; 
-   
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
-.btn-details{
-    margin-left: 100%;
-    margin-top: 50%;
-    width: 120px;
+.more-cl{ 
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+/* .btn-details{
+    text-decoration: none;
+    color: lightgray;
+    height: 35px;
+    width: 150px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
+
+.moreBtn:hover {
+    background-color: rgb(241, 127, 127);
+    color: rgb(140, 108, 108);
+    box-shadow: 1px 1px 12px 1px rgb(149, 115, 115);
+}  */

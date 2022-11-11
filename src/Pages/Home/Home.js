@@ -6,6 +6,7 @@ import Button from 'react-bootstrap/Button';
 import Classes from './classes/Classes';
 
 const Home = () => {
+    
     return (
         <Container>
             <Row>
@@ -29,7 +30,10 @@ const Home = () => {
                     </div>
                 </Col>
                 <Col>
-                    <Classes></Classes>
+                    <div>
+
+                        <Classes></Classes>
+                    </div>
                 </Col>
             </Row>
         </Container>

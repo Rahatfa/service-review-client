@@ -3,7 +3,8 @@
 }
 .nab-main{
     background-color: #000;
-    width: 100%;
+    width: 100%!important;
+    max-width: unset;
 }
 .me-auto{
     background-color: #000;

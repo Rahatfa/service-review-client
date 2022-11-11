@@ -1,6 +1,8 @@
+import { Card } from "react-bootstrap";
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../../Layout/Main";
 import Blog from "../../Pages/Blog/Blog";
+import Cards from "../../Pages/Home/classes/Cards";
 import Classes from "../../Pages/Home/classes/Classes";
 import Home from "../../Pages/Home/Home";
 import Login from "../../Pages/Login/Login";
@@ -24,6 +26,10 @@ const router = createBrowserRouter([
             {
                 path:'/classes',
                 element: <Classes></Classes>
+            },
+            {
+                path:'/cards',
+                element: <Cards></Cards>
             },
             {
                 path:'/login',
