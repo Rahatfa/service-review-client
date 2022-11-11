@@ -11,7 +11,7 @@ const Classes = () => {
     const [classes, setClasses] = useState([]);
 
     useEffect(()=>{
-        fetch('data.json')
+        fetch('http://localhost:5000/classes')
         .then (res=> res.json())
         .then(data => setClasses(data))
 
@@ -34,7 +34,7 @@ const Classes = () => {
 
                 }
                 <div>
-                    <Button  className='btn-details'> <Link to= '/classe'> More Classes </Link> </Button>
+                    <Button  className='btn-details'> <Link to= '/classes'> More Classes </Link> </Button>
                 </div>
             </div>
             

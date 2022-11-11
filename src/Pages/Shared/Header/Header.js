@@ -16,13 +16,14 @@ const Header = () => {
                 <Container className='nab-main'>
                     <Navbar.Brand href="#home">
                         <img className='logo' src={logo} alt="" />
+                        <p>Train with Rahat</p>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
                         <Link to='/home' href="#features">Home</Link>
-                        <Link to='/classe' href="#pricing">Classe</Link>
-                        <Link to='/Blogs' href="#pricing">Blogs</Link>
+                        <Link to='/classes' href="#pricing">Classes</Link>
+                        <Link to='/Blog' href="#pricing">Blog</Link>
                         
                     </Nav>
                     <Nav>
