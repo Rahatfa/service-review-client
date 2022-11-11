@@ -7,7 +7,7 @@ const Cards = () => {
     const [cards, setCards] = useState([]);
 
     useEffect(()=>{
-        fetch('http://localhost:5000/classes')
+        fetch('https://fit-with-rahat-server.vercel.app/classes')
         .then (res=> res.json())
         .then(data => setCards(data))
 

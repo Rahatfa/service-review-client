@@ -35,7 +35,7 @@ export const router = createBrowserRouter([
             {
                 path:'/cardDetails/:id',
                 element: <ClassDetails></ClassDetails>,
-                loader: ({params}) => fetch(`http://localhost:5000/classes/${params.id}`)
+                loader: ({params}) => fetch(`https://fit-with-rahat-server.vercel.app/classes/${params.id}`)
 
             },
             {
