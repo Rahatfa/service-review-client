@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button } from 'react-bootstrap';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -27,10 +28,13 @@ const Header = () => {
                         
                     </Nav>
                     <Nav>
-                        <Link to='/login'>Login</Link>
-                        <Link to='/signUp' eventKey={2} href="#memes">
+                        <Button className='me-2' variant="outline-success">Login with Google</Button>
+                        <Button variant="outline-dark"><Link to='/login' className='m-2'>Login</Link></Button>
+                        <Button variant="outline-dark"><Link to='/signUp'>
                         Sign Up
-                        </Link>
+                        </Link></Button>
+                        
+                        
                     </Nav>
                     </Navbar.Collapse>
                 </Container>
