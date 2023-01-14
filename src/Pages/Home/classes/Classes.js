@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Button } from 'react-bootstrap';
+import { Button, Col, Container, Row } from 'react-bootstrap';
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
 import { Link } from 'react-router-dom';
@@ -25,22 +25,31 @@ const Classes = () => {
                 <div>
                     <h3 className='text-white'>Classes</h3>
                 </div>
-                <div className='classesCards'>
+                <div className=''>
                     
-                    <div className='more-c'>
-                        {
-                             classes.slice(0,3).map(classe => <ClasseCards
-                                key={classe.key}
-                                classe={classe}
-                            
-                        
-                                ></ClasseCards>)
-
-                        }
-                        <div>
-                        <Button  variant='light' className='btn-details'> <Link to= '/cards'> More Classes </Link> </Button>
-                        </div>
-                    </div>
+                    <Container>
+                        <Row>
+                            <Col>
+                            <div className='container col-3 col-sm-2'>
+                                <div class="d-flex justify-content-evenly gap-3">
+                                    {
+                                         classes.slice(0,3).map(classe => <ClasseCards
+                                            key={classe.key}
+                                            classe={classe}
+                                        
+                                        
+                                            ></ClasseCards>)
+                                        
+                                    }
+                                </div>
+                                <br />
+                                <div>
+                                    <Button  variant='light' className='btn-details'> <Link to= '/cards'> More Classes </Link> </Button>
+                                </div>
+                            </div>
+                            </Col>
+                        </Row>
+                    </Container>
                 </div>
             </div>
             
