@@ -29,7 +29,7 @@ const SignUp = () => {
             <p>SignUp</p>
             <Form onSubmit={handleSignUp}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Label>Email address</Form.Label>
+                    <Form.Label>Name</Form.Label>
                     <Form.Control type="text" name='name' placeholder="Enter Your Name" />
                     
                 </Form.Group>

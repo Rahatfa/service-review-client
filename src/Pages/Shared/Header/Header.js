@@ -14,9 +14,15 @@ import './Header.css';
 
 const Header = () => {
 
-    const {providerLogin} = useContext(AuthContext);
+    const {providerLogin, user, logOut} = useContext(AuthContext);
 
     const googleProvider = new GoogleAuthProvider()
+
+    const handleLogOut = () => {
+        logOut()
+        .then (() => {})
+        .catch(error=> console.error(error))
+      }
 
     const handleGoogleSignIn = () =>{
         providerLogin(googleProvider)
@@ -44,11 +50,20 @@ const Header = () => {
                         
                     </Nav>
                     <Nav>
-                        <Button onClick={handleGoogleSignIn} className='me-2' variant="outline-success">Login with Google</Button>
-                        <Button variant="outline-dark"><Link to='/login' className='m-2'>Login</Link></Button>
-                        <Button variant="outline-dark"><Link to='/signUp'>
-                        Sign Up
-                        </Link></Button>
+                        {
+                            user?.uid ?
+                            <>
+                                <span className='me-2'> {user?.displayName}</span>
+                                <Button variant="ghost-btn" onClick={handleLogOut}>Log Out</Button>
+                            </>
+                        
+                        :
+                            <>
+                                <Button onClick={handleGoogleSignIn} className='me-2' variant="outline-success">Login with Google</Button>
+                                <Button variant="outline-dark"><Link to='/login' className='m-2'>Login</Link></Button>
+                                <Button variant="outline-dark"><Link to='/signUp'> Sign Up </Link></Button>
+                            </>
+                        }   
                         
                         
                     </Nav>
