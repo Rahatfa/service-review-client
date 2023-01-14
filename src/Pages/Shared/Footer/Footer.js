@@ -8,7 +8,7 @@ import './Footer.css';
 const Footer = () => {
     return (
         <div className='footerMain'>
-            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+            {/* <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
                 <Container className='footer-main'>
                     <Navbar.Brand href="#home">
                         <img className='logo' src={logo} alt="" />
@@ -27,7 +27,21 @@ const Footer = () => {
                         &copy; <em id="date"></em>2022 Train with Rahat
                     </div>
                 </Container>
-            </Navbar>
+            </Navbar> */}
+            <div class="card text-center bg-black text-white">
+                <div class="card-header">
+                <img className='logo' src={logo} alt="" /><br />
+                    @ Train with Rahat 
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Special Training Available</h5>
+                  <p class="card-text">With MY help you will build your dream body.</p>
+                  
+                </div>
+                <div class="card-footer text-muted">
+                  {/* 2 days ago */}
+                </div>
+            </  div>
         </div>
     );
 };

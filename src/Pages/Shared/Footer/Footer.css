@@ -1,24 +1,24 @@
-.logo{
+/* .logo{
     width: 100px;
-}
-.footer-main{
+} */
+/* .footer-main{
     background-color: #000;
     width: 100%!important;
     max-width: unset;
     flex-flow: column;
     align-items: center;
-}
+} */
 .me-auto{
-    background-color: #000;
-    color: #000;
-    width: 50%;
+    /* background-color: #000; */
+    color: #e4dcdc;
+    /* width: 50%;
     font-size: x-large;
     font-weight: 700;
     margin: 50px auto;
-    justify-content: space-evenly;
+    justify-content: space-evenly; */
 
 }
 
-.policy {
+/* .policy {
     color: lightgray;
-}
+} */
