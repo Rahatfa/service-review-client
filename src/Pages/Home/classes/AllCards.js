@@ -8,7 +8,7 @@ const AllCards = ({card}) => {
     
     const {_id, image, title, description, price}= card;
     return (
-        <div className='all-cards'>
+        <div className='col-md-4 p-2'>
             <Card style={{ width: '18rem' }}>
                 <Card.Img className='card-img' variant="top" src={image} />
                 <Card.Body>

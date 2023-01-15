@@ -23,7 +23,22 @@ const Login = () =>
         login(email, password)
         .then(result =>{
             const user = result.user;
-            console.log(user);
+             const currentUser= {
+                email: user.email
+             }
+             console.log(currentUser);
+
+            fetch('https://fit-with-rahat-server.vercel.app/jwt',{
+                method: 'POST',
+                headers: {
+                    'const-type': 'application/json'
+                },
+                body: JSON.stringify(currentUser)
+            })
+            .then(res=> res.json())
+            .then(data =>{
+                console.log(data);
+            })
             form.reset();
             navigate('/home')
         })

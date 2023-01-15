@@ -16,7 +16,7 @@ const Cards = () => {
     // const {image, title, description, price}= classe;
    
     return (
-        <div>
+        <div className='row'> 
             <h1>classe : {cards.length}</h1>
             {
                 cards.map(card=> 

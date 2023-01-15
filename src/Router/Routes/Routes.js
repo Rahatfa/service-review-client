@@ -1,6 +1,7 @@
 import { Card } from "react-bootstrap";
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../../Layout/Main";
+import AddService from "../../Pages/Blog/AddService/AddService";
 import Blog from "../../Pages/Blog/Blog";
 import Cards from "../../Pages/Home/classes/Cards";
 import ClassDetails from "../../Pages/Home/classes/ClassDetails";
@@ -49,7 +50,11 @@ export const router = createBrowserRouter([
             {
                 path:'/blog',
                 element: <Blog></Blog>
-            }
+            },
+            {
+                path:'/addService',
+                element:<AddService></AddService>
+        }
         ]
     }
 ])

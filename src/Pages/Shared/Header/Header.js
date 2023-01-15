@@ -54,7 +54,9 @@ const Header = () => {
                             user?.uid ?
                             <>
                                 <span className='me-2'> {user?.displayName}</span>
-                                <Button variant="ghost-btn" onClick={handleLogOut}>Log Out</Button>
+                                <Button className='me-2' variant="outline-light">My Reviews</Button>
+                                <Button variant="outline-light">Add Service</Button>
+                                <Button className='ms-2' variant="outline-light" onClick={handleLogOut}>Log Out</Button>
                             </>
                         
                         :

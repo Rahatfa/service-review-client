@@ -1,0 +1,15 @@
+.width{
+    width: 800px;
+    /* height: 00px; */
+    background-color: rgb(232, 226, 226);
+    margin: 5%;
+    margin-left: 30%;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 15px 5px rgb(90, 87, 87);
+    
+}
+p{
+    font-weight:bold;
+    font-size: larger;
+}
