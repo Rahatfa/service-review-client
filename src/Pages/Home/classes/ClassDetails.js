@@ -6,7 +6,8 @@ const ClassDetails = () => {
     const cardDetails = useLoaderData();
     return (
         <div>
-            <h2>{cardDetails.title}</h2>
+            <h1>data loading</h1>
+            {/* <h2>{cardDetails.title}</h2> */}
         </div>
     );
 };

@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import { Link, useNavigate, useNavigation } from 'react-router-dom';
+import { Link, useLocation, useNavigate, useNavigation } from 'react-router-dom';
 import { AuthContext } from '../../contexts/AuthProvider/AuthProvider';
 import Spinner from '../Shared/Spinner/Spinner';
 import './Login.css';
@@ -10,6 +10,9 @@ const Login = () =>
 {
     const navigate = useNavigate();
     const navigation = useNavigation();
+    const location = useLocation();
+
+    const from = location.state?.from?.pathname || '/';
 
     const {login} = useContext(AuthContext);
 
@@ -31,16 +34,17 @@ const Login = () =>
             fetch('https://fit-with-rahat-server.vercel.app/jwt',{
                 method: 'POST',
                 headers: {
-                    'const-type': 'application/json'
+                    'content-type': 'application/json'
                 },
                 body: JSON.stringify(currentUser)
             })
             .then(res=> res.json())
             .then(data =>{
                 console.log(data);
+                localStorage.setItem('liveToken', data.token);
             })
             form.reset();
-            navigate('/home')
+            navigate(from, {replace:true})
         })
         .catch(error => console.log(error));
     }

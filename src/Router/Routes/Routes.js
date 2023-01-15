@@ -9,6 +9,7 @@ import Classes from "../../Pages/Home/classes/Classes";
 import Home from "../../Pages/Home/Home";
 import Login from "../../Pages/Login/Login";
 import SignUp from "../../Pages/SignUp/SignUp";
+import PrivateRoute from "./PrivateRoute/PrivateRoute";
 
 
 
@@ -31,11 +32,11 @@ export const router = createBrowserRouter([
             // },
             {
                 path:'/cards',
-                element: <Cards></Cards>
+                element: <PrivateRoute><Cards></Cards></PrivateRoute>
             },
             {
                 path:'/cardDetails/:id',
-                element: <ClassDetails></ClassDetails>,
+                element: <PrivateRoute><ClassDetails></ClassDetails></PrivateRoute>,
                 loader: ({params}) => fetch(`https://fit-with-rahat-server.vercel.app/classes/${params.id}`)
 
             },
@@ -53,8 +54,7 @@ export const router = createBrowserRouter([
             },
             {
                 path:'/addService',
-                element:<AddService></AddService>
-        }
+            element:<AddService></AddService>}
         ]
     }
 ])

@@ -44,9 +44,9 @@ const Header = () => {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
-                        <Link to='/home' href="#features">Home</Link>
-                        <Link to='/cards' href="#pricing">Classes</Link>
-                        <Link to='/Blog' href="#pricing">Blog</Link>
+                        <Link to='/home' href="#features" class="text-decoration-none">Home</Link>
+                        <Link to='/cards' href="#pricing" class="text-decoration-none">Classes</Link>
+                        <Link to='/Blog' href="#pricing" class="text-decoration-none">Blog</Link>
                         
                     </Nav>
                     <Nav>
@@ -55,7 +55,7 @@ const Header = () => {
                             <>
                                 <span className='me-2'> {user?.displayName}</span>
                                 <Button className='me-2' variant="outline-light">My Reviews</Button>
-                                <Button variant="outline-light">Add Service</Button>
+                                <Button variant="outline-light"><Link to='/addService' href="#" class="text-decoration-none">Add Service</Link></Button>
                                 <Button className='ms-2' variant="outline-light" onClick={handleLogOut}>Log Out</Button>
                             </>
                         
